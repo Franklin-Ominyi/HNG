@@ -1,5 +1,22 @@
 .app {
-	height: 100vh;
-	background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) no-repeat;
-	color: var(--primary-white);
+	min-height: 100vh;
+	height: fit-content;
+	padding-bottom: 40px;
+	background-color: var(--primary-white);
+	color: var(--primary-black);
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.content {
+	width: 60%;
+	margin: 0 auto;
+}
+
+@media screen and (max-width: 760px) {
+	.content {
+		width: 80%;
+		margin: 0 auto;
+	}
 }
