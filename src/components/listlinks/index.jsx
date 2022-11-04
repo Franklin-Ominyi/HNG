@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom/dist";
 import "./ListLinks.css";
 
 const ListLinks = () => {
@@ -58,6 +59,9 @@ const ListLinks = () => {
 			>
 				Design Book
 			</a>
+			<Link to='/contact' className='item'>
+				Contact Me
+			</Link>
 		</div>
 	);
 };

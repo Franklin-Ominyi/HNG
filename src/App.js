@@ -1,16 +1,15 @@
 import "./App.css";
-import Profile from "./components/profile";
-import ListLinks from "./components/listlinks";
-import Social from "./components/social";
-import { Footer } from "./components/footer";
+import { Route, Routes } from "react-router-dom";
+import { Home } from "./pages/home";
+import { ContactMe } from "./pages/contactme";
 
 function App() {
 	return (
 		<div className='app'>
-			<Profile />
-			<ListLinks />
-			<Social />
-			<Footer />
+			<Routes>
+				<Route path='/' exact element={<Home />} />
+				<Route path='/contact' element={<ContactMe />} />
+			</Routes>
 		</div>
 	);
 }
