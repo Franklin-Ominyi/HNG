@@ -57,7 +57,7 @@ export const ContactMe = () => {
 						<p>You agree to providing your data to {`{name}`} who may contact you.</p>
 					</div>
 					<div>
-						<button id='btn_submit'>Send message</button>
+						<button id='btn__submit'>Send message</button>
 					</div>
 				</div>
 			</div>
