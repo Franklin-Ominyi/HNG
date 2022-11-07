@@ -59,7 +59,7 @@ const ListLinks = () => {
 			>
 				Design Book
 			</a>
-			<Link to='/contact' className='item'>
+			<Link to='/contact' id='contact' className='item'>
 				Contact Me
 			</Link>
 		</div>
