@@ -1,22 +1,23 @@
-.app {
-	min-height: 100vh;
-	height: fit-content;
-	padding-bottom: 40px;
-	background-color: var(--primary-white);
-	color: var(--primary-black);
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
+.content {
+	width: 85%;
+	margin: 0 auto;
 }
 
-.content {
-	width: 60%;
-	margin: 0 auto;
+.App {
+	position: relative;
+}
+
+.wrapper {
+	position: relative;
+	top: 12vh;
 }
 
 @media screen and (max-width: 760px) {
 	.content {
-		width: 80%;
-		margin: 0 auto;
+		width: 90%;
+	}
+
+	.wrapper {
+		top: 0vh;
 	}
 }

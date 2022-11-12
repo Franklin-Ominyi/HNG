@@ -1,0 +1,45 @@
+.place-wrapper {
+	position: relative;
+	top: 10rem;
+}
+
+.top-nav {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.place-wrapper p:hover {
+	cursor: pointer;
+	color: #a02279;
+}
+
+.place-wrapper .input-wrapper {
+	border: 1px solid rgba(180, 180, 180, 1);
+	border-radius: 10px;
+	padding: 10px;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.place-wrapper .input-wrapper input {
+	display: block;
+	border: none;
+	outline: none;
+	max-width: 100px;
+}
+
+@media screen and (max-width: 760px) {
+	.place-wrapper .input-wrapper {
+		width: 100%;
+	}
+	.place-wrapper .top-nav p {
+		display: none;
+	}
+
+	.place-wrapper .input-wrapper input {
+		max-width: 100%;
+		width: 100%;
+	}
+}

@@ -1,16 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 16px;
-	font-family: "Inter", sans-serif;
+	font-family: "Red Rose", cursive;
+}
+
+body {
+	position: relative;
+}
+p,
+h1 {
+	margin: 0;
 }
 
 :root {
 	--primary-white: #fff;
-	--primary-black: #000;
+	--primary-black: #434343;
+	--primary-btn: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+	--primary-border: rgba(247, 247, 247, 0.1);
 	--primary-background: #eaecf0;
 	--primary-blue: #1570ef;
 }

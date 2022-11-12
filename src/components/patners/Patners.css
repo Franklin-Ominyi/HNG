@@ -1,0 +1,17 @@
+.patners {
+	width: 100%;
+	padding: 10px;
+	background: var(--primary-btn);
+}
+
+.patners .content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 760px) {
+	.patners img {
+		width: 75%;
+	}
+}

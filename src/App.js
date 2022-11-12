@@ -1,17 +1,22 @@
-import "./App.css";
+import React, { useContext } from "react";
 import { Route, Routes } from "react-router-dom";
-import { Home } from "./pages/home";
-import { ContactMe } from "./pages/contactme";
+import "./App.css";
+import Modal from "./components/modal/Modal";
+import { AppContext } from "./context/AppContext";
+import Landing from "./pages/Landing";
+import Place from "./pages/place/Place";
 
-function App() {
+const App = () => {
+	const { setModalActive, modalActive } = useContext(AppContext);
 	return (
-		<div className='app'>
+		<div className='App'>
+			<Modal setModalActive={setModalActive} modalActive={modalActive} />
 			<Routes>
-				<Route path='/' exact element={<Home />} />
-				<Route path='/contact' element={<ContactMe />} />
+				<Route path='/' exact element={<Landing />} />
+				<Route path='/place' exact element={<Place />} />
 			</Routes>
 		</div>
 	);
-}
+};
 
 export default App;
