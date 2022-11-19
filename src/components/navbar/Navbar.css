@@ -2,7 +2,7 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	padding-top: 30px;
+	padding-top: 20px;
 	z-index: 10;
 	background-color: var(--primary-white);
 }
@@ -21,19 +21,19 @@
 }
 
 .navbar img {
-	width: 200px;
+	width: 80px;
 }
 
 .navbar a {
 	text-decoration: none;
-	color: var(--primary-black);
+	color: var(--primary-gray);
 	transition: color 0.6s ease;
 	font-size: 18px;
 	transition: color 0.6s ease;
 }
 
 .navbar a:hover {
-	color: #a02279;
+	color: var(--primary-blue);
 }
 .navbar .links {
 	margin-top: 6px;
@@ -44,13 +44,18 @@
 
 .navbar .button {
 	padding: 15px 20px;
-	background: var(--primary-btn);
+	background: var(--primary-blue);
 	color: var(--primary-white);
-	border-radius: 8px;
+	border-radius: 5px;
 	cursor: pointer;
 }
 
-@media screen and (max-width: 760px) {
+.navbar .button:first-child {
+	background: var(--primary-text-btn);
+	color: var(--primary-blue);
+}
+
+@media screen and (max-width: 860px) {
 	.navbar {
 		padding: 0;
 		padding-top: 10px;
@@ -61,7 +66,7 @@
 	.navbar .mobile {
 		font-size: 25px;
 		font-weight: 500;
-		color: #a02279;
+		color: var(--primary-blue);
 		display: block;
 		margin-top: 6px;
 		cursor: pointer;
@@ -91,7 +96,7 @@
 	}
 
 	.navbar .mobile-menu a:hover {
-		color: #a02279;
+		color: var(--primary-blue);
 	}
 
 	.navbar img {

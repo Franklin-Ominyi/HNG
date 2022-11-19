@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo.svg";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../context/AppContext";
 
@@ -11,17 +11,23 @@ const Navbar = () => {
 		<div className='navbar '>
 			<div className='content'>
 				<div>
-					<img src={logo} alt='Metabnb' />
+					<Link to='/'>
+						<img src={logo} alt='afm' />
+					</Link>
 				</div>
 				<div className='links'>
-					<Link to='/'>Home</Link>
-					<Link to='/place'>Place to stay</Link>
-					<Link to='/'>NFTs</Link>
-					<Link to='/'>Community</Link>
+					<Link to='/about'>About us</Link>
+					<Link to='/pricing'>Pricing plan</Link>
+					<Link to='/blog'>Blog </Link>
+					<Link to='/faqs'>FAQs</Link>
+					<Link to='/contact'>Contact us</Link>
 				</div>
 				<div>
+					<span className='button mr-4' onClick={() => setModalActive(true)}>
+						Sign in
+					</span>
 					<span className='button' onClick={() => setModalActive(true)}>
-						Connect wallet
+						Get started
 					</span>
 				</div>
 
@@ -37,26 +43,25 @@ const Navbar = () => {
 				)}
 			</div>
 			<div className={`mobile-menu ${active ? "active" : ""}`}>
-				<Link to='/' onClick={() => setActive(false)}>
-					Home
+				<Link to='/about' onClick={() => setActive(false)}>
+					About us
 				</Link>
-				<Link to='/place' onClick={() => setActive(false)}>
-					Place to stay
+				<Link to='/pricing' onClick={() => setActive(false)}>
+					Pricing plan
 				</Link>
-				<a href='/' onClick={() => setActive(false)}>
-					NFTs
+				<a href='/blog' onClick={() => setActive(false)}>
+					Blog
 				</a>
-				<Link to='/' onClick={() => setActive(false)}>
-					Community
+				<Link to='/faqs' onClick={() => setActive(false)}>
+					FAQs
 				</Link>
 				<Link
-					to='/'
+					to='/contact'
 					onClick={() => {
 						setActive(false);
-						setModalActive(true);
 					}}
 				>
-					Connect to Wallet
+					Contact us
 				</Link>
 			</div>
 		</div>

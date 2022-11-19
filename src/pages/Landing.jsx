@@ -1,21 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "./../components/navbar/Navbar";
 import Home from "./home/Home";
-import Patners from "./../components/patners/Patners";
-import Products from "./products/Products";
-import Nfts from "./nfts/Nfts";
 import Footer from "./../components/footer/Footer";
+import Faqs from "../components/faqs/Faqs";
 
 const Landing = () => {
+	useEffect(() => {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}, []);
 	return (
 		<div>
 			<div className=''>
 				<Navbar />
 				<div className='wrapper'>
 					<Home />
-					<Patners />
-					<Products />
-					<Nfts />
+					<Faqs />
 					<Footer />
 				</div>
 			</div>

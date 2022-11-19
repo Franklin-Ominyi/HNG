@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 16px;
-	font-family: "Red Rose", cursive;
+	font-family: "Outfit", sans-serif;
 }
 
 body {
@@ -18,9 +18,13 @@ h1 {
 
 :root {
 	--primary-white: #fff;
+	--primary-gray: rgba(82, 81, 91, 1);
 	--primary-black: #434343;
-	--primary-btn: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+
 	--primary-border: rgba(247, 247, 247, 0.1);
 	--primary-background: #eaecf0;
-	--primary-blue: #1570ef;
+	--primary-blue: #2e3192;
+	--secondary-blue: #171646;
+	--primary-gray-bg: #f7f7f8;
+	--primary-text-btn: rgba(196, 213, 238, 0.2);
 }
